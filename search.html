@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MySpotify | Search</title>
+  <link rel="stylesheet" href="assets/css/reset.css" />
+  <link rel="stylesheet" href="assets/css/variables.css" />
+  <link rel="stylesheet" href="assets/css/layout.css" />
+  <link rel="stylesheet" href="assets/css/components.css" />
+  <link rel="stylesheet" href="assets/css/player.css" />
+  <link rel="stylesheet" href="assets/css/responsive.css" />
+</head>
+<body>
+  <div class="app-container">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="logo">🎵 MySpotify</div>
+      <nav class="menu">
+        <a href="index.html">Home</a>
+        <a href="search.html" class="active">Search</a>
+        <a href="albums.html">Albums</a>
+        <a href="playlist.html">Playlists</a>
+        <a href="account.html">Account</a>
+      </nav>
+    </aside>
+
+    <!-- Main -->
+    <main class="main-content">
+      <header class="main-header">
+        <input type="text" placeholder="Search songs, artists, or albums..." class="search-bar" />
+      </header>
+
+      <section class="content-grid">
+        <h3>Top Results</h3>
+        <div class="card-grid">
+          <a href="song.html" class="music-card">
+            <img src="assets/images/album-art/album3.jpg" alt="Result" />
+            <h4>Shimmer</h4>
+            <p>Nova Sound</p>
+          </a>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <!-- Player -->
+  <footer class="player-bar">
+    <div class="player-controls">
+      <button>⏮</button>
+      <button>▶</button>
+      <button>⏭</button>
+    </div>
+  </footer>
+</body>
+</html>

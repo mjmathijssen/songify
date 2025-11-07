@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MySpotify | Account</title>
+  <title>MySpotify | Albums</title>
   <link rel="stylesheet" href="assets/css/reset.css" />
   <link rel="stylesheet" href="assets/css/variables.css" />
   <link rel="stylesheet" href="assets/css/layout.css" />
@@ -18,24 +18,30 @@
       <nav class="menu">
         <a href="index.html">Home</a>
         <a href="search.html">Search</a>
-        <a href="albums.html">Albums</a>
+        <a href="albums.html" class="active">Albums</a>
         <a href="playlist.html">Playlists</a>
-        <a href="account.html" class="active">Account</a>
+        <a href="account.html">Account</a>
       </nav>
     </aside>
 
-    <main class="main-content account-page">
-      <section>
-        <h2>Account Settings</h2>
-        <form class="account-form">
-          <label>Display Name</label>
-          <input type="text" placeholder="Your name" />
-          <label>Email</label>
-          <input type="email" placeholder="you@example.com" />
-          <label>Password</label>
-          <input type="password" placeholder="••••••••" />
-          <button type="submit" class="btn-primary">Save Changes</button>
-        </form>
+    <main class="main-content">
+      <header class="main-header">
+        <h2>Albums</h2>
+      </header>
+
+      <section class="content-grid">
+        <div class="card-grid">
+          <a href="song.html" class="music-card">
+            <img src="assets/images/album-art/album4.jpg" alt="Album" />
+            <h4>Midnight Drive</h4>
+            <p>DJ Sonic</p>
+          </a>
+          <a href="song.html" class="music-card">
+            <img src="assets/images/album-art/album5.jpg" alt="Album" />
+            <h4>Golden Hour</h4>
+            <p>Aura</p>
+          </a>
+        </div>
       </section>
     </main>
   </div>

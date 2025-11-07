@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Songify | Home</title>
+  <title>MySpotify | Home</title>
   <link rel="stylesheet" href="assets/css/reset.css" />
   <link rel="stylesheet" href="assets/css/variables.css" />
   <link rel="stylesheet" href="assets/css/layout.css" />
@@ -11,7 +11,6 @@
   <link rel="stylesheet" href="assets/css/player.css" />
   <link rel="stylesheet" href="assets/css/responsive.css" />
 </head>
-
 <body>
   <div class="app-container">
 
@@ -21,40 +20,37 @@
       <nav class="menu">
         <a href="index.html" class="active">Home</a>
         <a href="search.html">Search</a>
-        <a href="library.html">Your Library</a>
-        <hr />
-        <a href="playlists.html">Playlists</a>
+        <a href="albums.html">Albums</a>
+        <a href="playlist.html">Playlists</a>
+        <a href="account.html">Account</a>
       </nav>
     </aside>
 
-    <!-- Main Content -->
+    <!-- Main -->
     <main class="main-content">
       <header class="main-header">
-        <input type="text" placeholder="Search music..." class="search-bar" />
+        <h2>Welcome Back!</h2>
       </header>
 
       <section class="content-grid">
-        <h2>Recently Played</h2>
+        <h3>Recently Played</h3>
         <div class="card-grid">
-          <div class="music-card">
-            <img src="assets/images/album-art/album1.jpg" alt="Album" />
-            <h3>Album Name</h3>
-            <p>Artist Name</p>
-          </div>
-
-          <div class="music-card">
-            <img src="assets/images/album-art/album2.jpg" alt="Album" />
-            <h3>Another Album</h3>
-            <p>Artist Name</p>
-          </div>
-
-          <!-- Add more cards -->
+          <a href="song.html" class="music-card">
+            <img src="assets/images/album-art/album1.jpg" alt="Album 1" />
+            <h4>Dream Waves</h4>
+            <p>By Luna Beats</p>
+          </a>
+          <a href="song.html" class="music-card">
+            <img src="assets/images/album-art/album2.jpg" alt="Album 2" />
+            <h4>Echo Nights</h4>
+            <p>By SoundEdge</p>
+          </a>
         </div>
       </section>
     </main>
   </div>
 
-  <!-- Player Bar -->
+  <!-- Player -->
   <footer class="player-bar">
     <div class="player-controls">
       <button>⏮</button>
@@ -62,10 +58,10 @@
       <button>⏭</button>
     </div>
     <div class="track-info">
-      <img src="assets/images/album-art/album1.jpg" alt="Album Cover" />
+      <img src="assets/images/album-art/album1.jpg" alt="Now Playing" />
       <div>
-        <h4>Song Title</h4>
-        <p>Artist</p>
+        <h4>Dream Waves</h4>
+        <p>Luna Beats</p>
       </div>
     </div>
     <div class="progress-bar">
@@ -74,7 +70,5 @@
       <span>3:45</span>
     </div>
   </footer>
-
-  <script src="assets/js/main.js"></script>
 </body>
 </html>
